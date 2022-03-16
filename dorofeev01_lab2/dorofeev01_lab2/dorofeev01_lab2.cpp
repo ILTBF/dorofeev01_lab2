@@ -7,6 +7,7 @@
 #include "date.h" // дата
 #include "tourist.h" // турист
 #include "hotel.h" // отель
+#include "entertainment.h" // отель
 
 int main()
 {
@@ -17,6 +18,7 @@ int main()
     date dataEST, dataINPUT;
     tourist touristFIO;
     hotel hotelINF;
+    entertainment entertainmentINF;
     dataEST = createDate(22, 11, 2021); //Функция создания даты
     dataINPUT = createDate(11, 11, 2021); //Функция создания даты
     numberOFdays = difDate(dataEST, dataINPUT); //Количество дней между датами
@@ -30,5 +32,8 @@ int main()
     hotelINF = enterHotel(); // Ввод данных об отеле
     valueHotel(hotelINF); // Подсчёт цены
     printHotel(hotelINF); // Вывод данных об отеле
+    entertainmentINF = enterEntertainment(); // ввод данных об инвенторе
+    valueEntertainment(entertainmentINF); // подсчёт надбавки к стоимости
+    printEntertainment(entertainmentINF); // вывод данных об инвентаре
     printf("\n\n");
 }
