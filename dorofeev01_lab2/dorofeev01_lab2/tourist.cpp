@@ -16,7 +16,7 @@ struct tourist enterTourist() { //Функция ввода
 	printf("Введите отчество: ");
 	scanf("%s", &touristt.patronymic);
 	while (getchar() != '\n');
-	printf("\n\nДата вашего рождения: ");
+	printf("\nДата вашего рождения: ");
 	touristt.trst = enterDate();
 	return touristt;
 }
@@ -29,8 +29,7 @@ struct tourist createTourist(char n[15], char s[25], char p[30], date trstС) {
 	return touristt;
 }
 void printTourist(tourist tourist1) {
-	printf("\n\nФИО %s %s %s", tourist1.surname, tourist1.name, tourist1.patronymic);
+	printf("\nФИО: %s %s %s", tourist1.surname, tourist1.name, tourist1.patronymic);
 	printf("\nДата Рождения: ");
 	printDate(tourist1.trst);
-
 }
