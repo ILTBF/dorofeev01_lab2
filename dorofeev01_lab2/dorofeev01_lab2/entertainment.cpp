@@ -7,7 +7,7 @@ using namespace std;
 
 struct entertainment enterEntertainment() {
 	entertainment entrtmm;
-	printf("\nВведите количество экскурсий: ");
+	printf("\n\nВведите количество экскурсий: ");
 	while (scanf("%d", &entrtmm.nexcursion) != 1) {
 		while (getchar() != '\n');
 		printf("Ошибка. Введите количество экскурсий: ");
@@ -31,9 +31,9 @@ void printEntertainment(entertainment entrtm1) { // Функция вывода
 	printf("\nКоличество музеев: %d", entrtm1.nmuseum);
 }
 
-void valueEntertainment(entertainment entrtm1) { // Функция подсчёта рейтинга судьи
+void valueEntertainment(entertainment entrtm1) { // Функция подсчёта
 	entertainment entrtmm;
 	int rPr = 0;
 	rPr = (entrtm1.nexcursion * 1200) + (entrtm1.nmuseum * 250);
-	printf("\nИтоговая стоимость: %d ", rPr);
+	printf("\nИтоговая стоимость посещения экскурсий и музеев: %d ", rPr);
 }

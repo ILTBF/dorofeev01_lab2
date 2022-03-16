@@ -7,5 +7,5 @@ struct entertainment {
 
 struct entertainment enterEntertainment(); //Функция ввода 
 struct entertainment createEntertainment(int ne, int nm); //Функция создания 
-void printEntertainment(entertainment invntr1); //Функция вывода
-void valueEntertainment(entertainment invntr1); //Функция расчета
+void printEntertainment(entertainment entrtm1); //Функция вывода
+void valueEntertainment(entertainment entrtm1); //Функция расчета
